@@ -73,14 +73,15 @@ WSGI_APPLICATION = 'teamanayzer.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+#'USER': 'analyzeman',
+        #'PASSWORD': 'admin123',
+        #'HOST': 'localhost',
+        #'PORT': '',
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'teamanayzer_data',
-        'USER': 'analyzeman',
-        'PASSWORD': 'admin123',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'teamanayzer_data.sql3'),
     }
 }
 
