@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
 	url(r'^', include('main.urls')),
+	url(r'^', include('summoner_info.urls')),
     url(r'^admin/', admin.site.urls),
 ]
