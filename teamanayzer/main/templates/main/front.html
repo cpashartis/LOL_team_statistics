@@ -1,21 +1,10 @@
 <html>
 <p> Hi there bitch! </p>
 
-<!-- <form action="/your-name/" method="post">
-    <label for="your_name">Your name: </label>
-    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
-    <input type="submit" value="OK">
-</form> -->
-
 <form action="/summoner/" method="get" id="summonerNameForm" >
-	Your name: <input type="text" name="summonerName" maxlength="100" required />
+	<label for="summonerNameForm">Your name: </label>
+	<input type="text" name="summonerName" maxlength="100" required />
 	<input type="submit" value="Submit" />
 </form>
-
-<!-- <form action="/your-name/" method="get">
-    {% csrf_token %}
-    {{ summonernameform }}
-    <input type="submit" value="Submit" />
-</form> -->
 
 </html>
